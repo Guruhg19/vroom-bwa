@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Brand;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
+use App\Http\Requests\BrandRequest;
 use App\Http\Controllers\Controller;
 
 class BrandController extends Controller
@@ -42,15 +44,18 @@ class BrandController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.brands.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(BrandRequest $request)
     {
-        //
+        $data = $request->all();
+        $data['slug'] = Str::slug($data['name'] . '-' . Str::lower(Str::random(5)));
+        Brand::create($data);
+        return redirect()->route('admin.brands.index')->with('success', 'Brand berhasil ditambahkan');
     }
 
     /**
