@@ -69,24 +69,32 @@ class BrandController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Brand $brand)
     {
-        //
+        return view('admin.brands.edit', [
+        'brand' => $brand,
+    ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(BrandRequest $request, Brand $brand)
     {
-        //
+        $data = $request->all();
+        $data['slug'] = Str::slug($data['name']) . '-' . Str::lower(Str::random(5));
+
+        $brand->update($data);
+        return redirect()->route('admin.brands.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Brand $brand)
     {
-        //
+        $brand->delete();
+
+        return redirect()->route('admin.brands.index');
     }
 }

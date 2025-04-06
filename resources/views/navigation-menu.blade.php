@@ -19,6 +19,10 @@
                     <x-nav-link href="{{ route('admin.brands.index') }}" :active="request()->routeIs('admin.brands.index')">
                         {{ __('Brands') }}
                     </x-nav-link>
+
+                    <x-nav-link href="{{ route('admin.types.index') }}" :active="request()->routeIs('admin.types.index')">
+                        {{ __('Types') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -149,6 +153,10 @@
 
             <x-responsive-nav-link href="{{ route('admin.brands.index') }}" :active="request()->routeIs('admin.brands.index')">
                 {{ __('Brands') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link href="{{ route('admin.types.index') }}" :active="request()->routeIs('admin.types.index')">
+                {{ __('Types') }}
             </x-responsive-nav-link>
         </div>
 
