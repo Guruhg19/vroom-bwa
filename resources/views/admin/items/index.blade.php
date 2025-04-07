@@ -24,6 +24,12 @@
                 name: 'id',
             },
             {
+                data: 'thumbnail',
+                name: 'thumbnail',
+                orderable: false,
+                searchable: false,
+            },
+            {
                 data: 'name',
                 name: 'name'
             },
@@ -34,6 +40,10 @@
             {
                 data: 'brand.name',
                 name: 'brand.name',
+            },
+            {
+                data: 'price',
+                name: 'price',
             },
             {
                 data: 'action',
@@ -61,9 +71,11 @@
                 <thead>
                 <tr>
                     <th style="max-width: 1%">ID</th>
+                    <th>Thumbnail</th>
                     <th>Nama</th>
                     <th>Type</th>
                     <th>Brand</th>
+                    <th>Harga</th>
                     <th style="max-width: 1%">Aksi</th>
                 </tr>
                 </thead>
