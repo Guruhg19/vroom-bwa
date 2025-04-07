@@ -28,8 +28,8 @@
                 name: 'name'
             },
             {
-                data: 'slug',
-                name: 'slug'
+                data: 'type.name',
+                name: 'type.name'
             },
             {
                 data: 'action',
