@@ -29,7 +29,11 @@
             },
             {
                 data: 'type.name',
-                name: 'type.name'
+                name: 'type.name',
+            },
+            {
+                data: 'brand.name',
+                name: 'brand.name',
             },
             {
                 data: 'action',
@@ -58,7 +62,8 @@
                 <tr>
                     <th style="max-width: 1%">ID</th>
                     <th>Nama</th>
-                    <th>Slug</th>
+                    <th>Type</th>
+                    <th>Brand</th>
                     <th style="max-width: 1%">Aksi</th>
                 </tr>
                 </thead>
