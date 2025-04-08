@@ -20,7 +20,7 @@ Project ini merupakan hasil dari kelas **Bootcamp Full-Stack Web Developer: Sewa
 - **Deployment**: Hosting/VPS (contoh: Vercel, Netlify, atau DigitalOcean)
 
 ## 🖼️ Cuplikan Tampilan
-
+![Image](https://github.com/user-attachments/assets/51860305-5ff4-4bf6-9a9c-e40d1c53b8b3)
 
 
 ## 🚀 Cara Menjalankan Project Ini
