@@ -28,8 +28,8 @@ Project ini merupakan hasil dari kelas **Bootcamp Full-Stack Web Developer: Sewa
 1. **Clone repository:**
 
 ```bash
-git clone https://github.com/username/sewa-mobil-app.git
-cd sewa-mobil-app
+git clone https://github.com/Guruhg19/vroom-bwa.git
+cd vroom-bwa
 ```
 
 2. **Install dependencies:**
